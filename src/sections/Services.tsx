@@ -118,7 +118,7 @@ export default function Services() {
           <h2 className="text-4xl sm:text-5xl font-bold">
             Complete <span className="gradient-text">Solutions</span>
           </h2>
-          <p className="mt-4 text-gray-400 max-w-2xl mx-auto text-lg">
+          <p className="mt-4 text-white max-w-2xl mx-auto text-lg">
             From concept to launch, we offer end-to-end services for your
             digital success
           </p>
@@ -129,39 +129,39 @@ export default function Services() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="group relative rounded-2xl glass p-6 hover:bg-white/[0.06] transition-all duration-500 cursor-pointer overflow-hidden"
+              className="group relative rounded-2xl glass bg-white/[0.05] p-6 transition-all duration-500 cursor-pointer overflow-hidden"
             >
-              {/* Gradient top border */}
+              {/* Gradient background on hover */}
               <div
-                className={`absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r ${service.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+                className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-50 transition-opacity duration-500`}
               />
 
               {/* Icon */}
               <div
-                className={`w-12 h-12 rounded-xl bg-gradient-to-br ${service.gradient} flex items-center justify-center mb-4`}
+                className={`relative z-10 w-12 h-12 rounded-xl bg-gradient-to-br ${service.gradient} flex items-center justify-center mb-4`}
               >
                 <service.icon size={24} className="text-white" />
               </div>
 
               {/* Content */}
-              <div className="flex items-center justify-between mb-2">
+              <div className="relative z-10 flex items-center justify-between mb-2">
                 <h3 className="text-xl font-semibold text-white">{service.title}</h3>
                 <ArrowUpRight
                   size={18}
                   className="text-gray-500 group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"
                 />
               </div>
-              <p className="text-sm text-violet-400 mb-3">{service.subtitle}</p>
-              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+              <p className="relative z-10 text-sm text-violet-400 mb-3">{service.subtitle}</p>
+              <p className="relative z-10 text-white text-sm leading-relaxed mb-4">
                 {service.description}
               </p>
 
               {/* Features */}
-              <div className="flex flex-wrap gap-2">
+              <div className="relative z-10 flex flex-wrap gap-2">
                 {service.features.map((f) => (
                   <span
                     key={f}
-                    className="text-xs px-3 py-1 rounded-full bg-white/5 text-gray-400"
+                    className="text-xs px-3 py-1 rounded-full bg-white/5 text-white"
                   >
                     {f}
                   </span>

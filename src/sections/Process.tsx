@@ -99,7 +99,7 @@ export default function Process() {
           <h2 className="text-4xl sm:text-5xl font-bold">
             How We <span className="gradient-text">Work</span>
           </h2>
-          <p className="mt-4 text-gray-400 max-w-2xl mx-auto text-lg">
+          <p className="mt-4 text-white max-w-2xl mx-auto text-lg">
             A proven 4-phase method to turn your vision into reality
           </p>
         </div>
@@ -121,15 +121,11 @@ export default function Process() {
                 }`}
               >
                 {/* Icon */}
-                <div className="md:w-1/2 flex justify-start md:justify-end pr-0 md:pr-12">
-                  <div
-                    className={`${
-                      i % 2 === 1 ? "md:order-last md:pl-12 md:pr-0" : ""
-                    }`}
-                  >
-                    <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${step.gradient} flex items-center justify-center shadow-lg`}>
-                      <step.icon size={28} className="text-white" />
-                    </div>
+                <div className={`md:w-1/2 flex justify-start ${
+                  i % 2 === 1 ? "md:justify-start md:pl-12" : "md:justify-end md:pr-12"
+                }`}>
+                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${step.gradient} flex items-center justify-center shadow-lg`}>
+                    <step.icon size={28} className="text-white" />
                   </div>
                 </div>
 
@@ -149,7 +145,7 @@ export default function Process() {
                     <h3 className="text-2xl font-bold text-white mt-1">
                       {step.title}
                     </h3>
-                    <p className="text-gray-400 mt-2 leading-relaxed">
+                    <p className="text-white mt-2 leading-relaxed">
                       {step.description}
                     </p>
                   </div>

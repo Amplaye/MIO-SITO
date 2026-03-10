@@ -107,7 +107,7 @@ export default function Portfolio() {
           <h2 className="text-4xl sm:text-5xl font-bold">
             Our <span className="gradient-text">Work</span>
           </h2>
-          <p className="mt-4 text-gray-400 max-w-2xl mx-auto text-lg">
+          <p className="mt-4 text-white max-w-2xl mx-auto text-lg">
             Some of the projects that turned our clients' ideas into digital
             success stories
           </p>
@@ -122,7 +122,7 @@ export default function Portfolio() {
               className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                 activeFilter === cat
                   ? "bg-gradient-to-r from-violet-600 to-cyan-600 text-white"
-                  : "glass text-gray-400 hover:text-white hover:bg-white/5"
+                  : "glass text-white hover:text-white hover:bg-white/5"
               }`}
             >
               {cat}
@@ -189,18 +189,12 @@ export default function Portfolio() {
               {/* Default title bar */}
               <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent group-hover:opacity-0 transition-opacity">
                 <h3 className="text-lg font-semibold text-white">{project.title}</h3>
-                <p className="text-sm text-gray-400">{project.category}</p>
+                <p className="text-sm text-white">{project.category}</p>
               </div>
             </div>
           ))}
         </div>
 
-        {/* View all */}
-        <div className="text-center mt-12">
-          <button className="px-8 py-3 rounded-xl glass text-gray-300 hover:text-white hover:bg-white/5 transition-all duration-300 text-sm font-medium">
-            View All Projects
-          </button>
-        </div>
       </div>
     </div>
   );

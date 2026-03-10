@@ -72,7 +72,7 @@ export default function Hero() {
         </div>
 
         {/* Subtitle */}
-        <p ref={subtitleRef} className="opacity-0 mt-6 text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto">
+        <p ref={subtitleRef} className="opacity-0 mt-6 text-lg sm:text-xl text-white max-w-2xl mx-auto">
           Websites that captivate, apps that conquer, e-commerce that sells.
           <span className="text-gray-300"> Your vision, our expertise.</span>
         </p>
@@ -98,7 +98,7 @@ export default function Hero() {
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-3xl sm:text-4xl font-bold gradient-text">{stat.value}</div>
-              <div className="text-sm text-gray-400 mt-1">{stat.label}</div>
+              <div className="text-sm text-white mt-1">{stat.label}</div>
             </div>
           ))}
         </div>

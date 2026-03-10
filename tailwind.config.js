@@ -21,7 +21,7 @@ export default {
         ring: "hsl(263 70% 58%)",
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
+        sans: ["Poppins", "system-ui", "-apple-system", "sans-serif"],
       },
       keyframes: {
         "gradient-shift": {
