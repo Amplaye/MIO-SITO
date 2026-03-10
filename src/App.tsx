@@ -16,16 +16,16 @@ function App() {
         <section id="home">
           <Hero />
         </section>
-        <section id="servizi">
+        <section id="services">
           <Services />
         </section>
-        <section id="processo">
+        <section id="process">
           <Process />
         </section>
         <section id="portfolio">
           <Portfolio />
         </section>
-        <section id="contatti">
+        <section id="contact">
           <CTA />
         </section>
       </main>

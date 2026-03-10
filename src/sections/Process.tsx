@@ -11,7 +11,7 @@ const steps = [
     icon: Lightbulb,
     title: "Discovery",
     description:
-      "Analizziamo le tue esigenze, studiamo il mercato e definiamo insieme gli obiettivi del progetto.",
+      "We analyze your needs, study the market, and define the project goals together.",
     gradient: "from-violet-500 to-purple-500",
   },
   {
@@ -19,15 +19,15 @@ const steps = [
     icon: PenTool,
     title: "Design",
     description:
-      "Creiamo wireframe e mockup visivi, definendo l'esperienza utente e l'interfaccia grafica.",
+      "We create wireframes and visual mockups, defining the user experience and interface design.",
     gradient: "from-cyan-500 to-blue-500",
   },
   {
     phase: "03",
     icon: Code,
-    title: "Sviluppo",
+    title: "Development",
     description:
-      "Trasformiamo il design in codice con le migliori tecnologie, seguendo standard elevati.",
+      "We turn designs into code using the best technologies, following high standards.",
     gradient: "from-pink-500 to-rose-500",
   },
   {
@@ -35,7 +35,7 @@ const steps = [
     icon: Rocket,
     title: "Launch",
     description:
-      "Deploy, testing finale e messa online. Il tuo progetto è pronto per conquistare il web.",
+      "Deployment, final testing, and go-live. Your project is ready to conquer the web.",
     gradient: "from-amber-500 to-orange-500",
   },
 ];
@@ -94,14 +94,13 @@ export default function Process() {
         {/* Header */}
         <div ref={titleRef} className="text-center mb-16 opacity-0">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-gray-300 mb-4">
-            Il Nostro Processo
+            Our Process
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold">
-            Come <span className="gradient-text">Lavoriamo</span>
+            How We <span className="gradient-text">Work</span>
           </h2>
           <p className="mt-4 text-gray-400 max-w-2xl mx-auto text-lg">
-            Un metodo collaudato in 4 fasi per trasformare la tua visione in
-            realtà
+            A proven 4-phase method to turn your vision into reality
           </p>
         </div>
 
@@ -145,7 +144,7 @@ export default function Process() {
                     }`}
                   >
                     <span className={`text-sm font-bold bg-gradient-to-r ${step.gradient} bg-clip-text text-transparent`}>
-                      FASE {step.phase}
+                      PHASE {step.phase}
                     </span>
                     <h3 className="text-2xl font-bold text-white mt-1">
                       {step.title}

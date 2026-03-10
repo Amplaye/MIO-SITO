@@ -4,10 +4,10 @@ import { Button } from "../components/ui/button";
 
 const navItems = [
   { label: "Home", href: "#home" },
-  { label: "Servizi", href: "#servizi" },
-  { label: "Processo", href: "#processo" },
+  { label: "Services", href: "#services" },
+  { label: "Process", href: "#process" },
   { label: "Portfolio", href: "#portfolio" },
-  { label: "Contatti", href: "#contatti" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Navigation() {
@@ -54,7 +54,7 @@ export default function Navigation() {
           {/* CTA */}
           <div className="hidden md:block">
             <Button className="bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white rounded-xl transition-all duration-300 hover:scale-105">
-              <a href="#contatti">Inizia il tuo progetto</a>
+              <a href="#contact">Start Your Project</a>
             </Button>
           </div>
 
@@ -83,7 +83,7 @@ export default function Navigation() {
               </a>
             ))}
             <Button className="w-full bg-gradient-to-r from-violet-600 to-cyan-600 text-white rounded-xl mt-2">
-              <a href="#contatti">Inizia il tuo progetto</a>
+              <a href="#contact">Start Your Project</a>
             </Button>
           </div>
         </div>

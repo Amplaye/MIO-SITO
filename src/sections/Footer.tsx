@@ -3,9 +3,9 @@ import { Input } from "../components/ui/input";
 import { Button } from "../components/ui/button";
 
 const footerLinks = {
-  servizi: ["Siti Web", "E-Commerce", "App Mobile", "Gestionali", "Brand Identity"],
-  azienda: ["Chi Siamo", "Portfolio", "Blog", "Lavora con Noi", "Contatti"],
-  risorse: ["Documentazione", "FAQ", "Supporto", "Privacy Policy", "Termini di Servizio"],
+  services: ["Websites", "E-Commerce", "Mobile Apps", "Custom Software", "Automations"],
+  company: ["About Us", "Portfolio", "Blog", "Careers", "Contact"],
+  resources: ["Documentation", "FAQ", "Support", "Privacy Policy", "Terms of Service"],
 };
 
 const socialLinks = [
@@ -29,8 +29,8 @@ export default function Footer() {
               <span className="text-xl font-bold text-white">NEXUS</span>
             </div>
             <p className="text-gray-400 leading-relaxed max-w-sm">
-              Trasformiamo idee in esperienze digitali straordinarie. Il tuo
-              partner per il successo online.
+              Turning ideas into extraordinary digital experiences. Your
+              partner for online success.
             </p>
             {/* Social */}
             <div className="flex gap-3 mt-6">
@@ -76,18 +76,18 @@ export default function Footer() {
         <div className="glass rounded-2xl p-8 mb-16">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <h3 className="text-xl font-bold text-white">Resta Aggiornato</h3>
+              <h3 className="text-xl font-bold text-white">Stay Updated</h3>
               <p className="text-gray-400 text-sm mt-1">
-                Iscriviti alla newsletter per ricevere news e offerte esclusive
+                Subscribe to our newsletter for exclusive news and offers
               </p>
             </div>
             <div className="flex gap-3 w-full md:w-auto">
               <Input
-                placeholder="La tua email"
+                placeholder="Your email"
                 className="bg-white/5 border-white/10 text-white placeholder:text-gray-500 rounded-xl h-12 md:w-64"
               />
               <Button className="bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white rounded-xl h-12 px-6">
-                Iscriviti
+                Subscribe
               </Button>
             </div>
           </div>
@@ -96,11 +96,11 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/5">
           <p className="text-gray-500 text-sm">
-            &copy; 2025 NEXUS Digital Studio. Tutti i diritti riservati.
+            &copy; 2025 NEXUS Digital Studio. All rights reserved.
           </p>
           <p className="text-gray-500 text-sm flex items-center gap-1 mt-2 md:mt-0">
-            Fatto con <Heart size={14} className="text-red-500 fill-red-500" /> a
-            Milano
+            Made with <Heart size={14} className="text-red-500 fill-red-500" /> in
+            Milan
           </p>
         </div>
       </div>

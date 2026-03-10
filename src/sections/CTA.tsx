@@ -8,9 +8,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "ciao@nexusstudio.it" },
-  { icon: Phone, label: "Telefono", value: "+39 02 1234 5678" },
-  { icon: MapPin, label: "Sede", value: "Milano, Italia" },
+  { icon: Mail, label: "Email", value: "hello@nexusstudio.com" },
+  { icon: Phone, label: "Phone", value: "+39 02 1234 5678" },
+  { icon: MapPin, label: "Location", value: "Milan, Italy" },
 ];
 
 export default function CTA() {
@@ -47,15 +47,15 @@ export default function CTA() {
           {/* Left - Info */}
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-gray-300 mb-4">
-              Iniziamo
+              Let's Start
             </div>
             <h2 className="text-4xl sm:text-5xl font-bold">
-              Pronto a <span className="gradient-text">Realizzare</span> il tuo
-              Progetto?
+              Ready to <span className="gradient-text">Build</span> Your
+              Project?
             </h2>
             <p className="mt-6 text-gray-400 text-lg leading-relaxed">
-              Raccontaci la tua idea. Ti risponderemo entro 24 ore con una
-              proposta personalizzata per trasformare la tua visione in realtà.
+              Tell us about your idea. We'll get back to you within 24 hours
+              with a personalized proposal to turn your vision into reality.
             </p>
 
             {/* Contact info */}
@@ -80,10 +80,10 @@ export default function CTA() {
               <div className="flex flex-col items-center justify-center h-full text-center py-12">
                 <CircleCheckBig size={64} className="text-emerald-400 mb-4" />
                 <h3 className="text-2xl font-bold text-white">
-                  Messaggio Inviato!
+                  Message Sent!
                 </h3>
                 <p className="text-gray-400 mt-2">
-                  Ti risponderemo al più presto.
+                  We'll get back to you shortly.
                 </p>
               </div>
             ) : (
@@ -91,19 +91,19 @@ export default function CTA() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm text-gray-400 mb-2 block">
-                      Nome
+                      First Name
                     </label>
                     <Input
-                      placeholder="Mario"
+                      placeholder="John"
                       className="bg-white/5 border-white/10 text-white placeholder:text-gray-500 rounded-xl h-12"
                     />
                   </div>
                   <div>
                     <label className="text-sm text-gray-400 mb-2 block">
-                      Cognome
+                      Last Name
                     </label>
                     <Input
-                      placeholder="Rossi"
+                      placeholder="Doe"
                       className="bg-white/5 border-white/10 text-white placeholder:text-gray-500 rounded-xl h-12"
                     />
                   </div>
@@ -115,43 +115,43 @@ export default function CTA() {
                   </label>
                   <Input
                     type="email"
-                    placeholder="mario@esempio.it"
+                    placeholder="john@example.com"
                     className="bg-white/5 border-white/10 text-white placeholder:text-gray-500 rounded-xl h-12"
                   />
                 </div>
 
                 <div>
                   <label className="text-sm text-gray-400 mb-2 block">
-                    Tipo di Progetto
+                    Project Type
                   </label>
                   <select className="flex h-12 w-full rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
                     <option value="" className="bg-gray-900">
-                      Seleziona...
+                      Select...
                     </option>
-                    <option value="sito-web" className="bg-gray-900">
-                      Sito Web
+                    <option value="website" className="bg-gray-900">
+                      Website
                     </option>
                     <option value="e-commerce" className="bg-gray-900">
                       E-Commerce
                     </option>
-                    <option value="app-mobile" className="bg-gray-900">
-                      App Mobile
+                    <option value="mobile-app" className="bg-gray-900">
+                      Mobile App
                     </option>
-                    <option value="gestionale" className="bg-gray-900">
-                      Gestionale
+                    <option value="custom-software" className="bg-gray-900">
+                      Custom Software
                     </option>
-                    <option value="altro" className="bg-gray-900">
-                      Altro
+                    <option value="other" className="bg-gray-900">
+                      Other
                     </option>
                   </select>
                 </div>
 
                 <div>
                   <label className="text-sm text-gray-400 mb-2 block">
-                    Messaggio
+                    Message
                   </label>
                   <Textarea
-                    placeholder="Raccontaci il tuo progetto..."
+                    placeholder="Tell us about your project..."
                     rows={4}
                     className="bg-white/5 border-white/10 text-white placeholder:text-gray-500 rounded-xl resize-none"
                   />
@@ -162,7 +162,7 @@ export default function CTA() {
                   className="w-full h-12 rounded-xl bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white font-medium flex items-center justify-center gap-2 btn-shine transition-all duration-300 hover:scale-[1.02]"
                 >
                   <Send size={18} />
-                  Invia Richiesta
+                  Send Request
                   <ArrowRight size={18} />
                 </button>
               </form>

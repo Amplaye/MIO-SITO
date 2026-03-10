@@ -4,7 +4,7 @@ import {
   ShoppingCart,
   Smartphone,
   Database,
-  Palette,
+  Zap,
   TrendingUp,
   ArrowUpRight,
 } from "lucide-react";
@@ -16,55 +16,55 @@ gsap.registerPlugin(ScrollTrigger);
 const services = [
   {
     icon: Globe,
-    title: "Siti Web",
-    subtitle: "Professionali & Creativi",
+    title: "Websites",
+    subtitle: "Professional & Creative",
     description:
-      "Dai vita alla tua presenza online con siti web moderni, responsive e ottimizzati per i motori di ricerca. Dal portfolio personale al corporate site.",
-    features: ["Design Responsive", "SEO Ottimizzato", "Performance Elevate", "CMS Integrato"],
+      "Bring your online presence to life with modern, responsive websites optimized for search engines. From personal portfolios to corporate sites.",
+    features: ["Responsive Design", "SEO Optimized", "High Performance", "CMS Integrated"],
     gradient: "from-violet-600 to-purple-600",
   },
   {
     icon: ShoppingCart,
     title: "E-Commerce",
-    subtitle: "Vendi Online",
+    subtitle: "Sell Online",
     description:
-      "Piattaforme di vendita complete con pagamenti sicuri, gestione inventario e analytics avanzati per far crescere il tuo business.",
-    features: ["Pagamenti Sicuri", "Gestione Magazzino", "Analytics", "Multi-valuta"],
+      "Complete sales platforms with secure payments, inventory management, and advanced analytics to grow your business.",
+    features: ["Secure Payments", "Inventory Management", "Analytics", "Multi-currency"],
     gradient: "from-cyan-600 to-blue-600",
   },
   {
     icon: Smartphone,
-    title: "App Mobile",
+    title: "Mobile Apps",
     subtitle: "iOS & Android",
     description:
-      "Applicazioni native e cross-platform che offrono esperienze utente fluide e coinvolgenti su ogni dispositivo.",
-    features: ["React Native", "UI/UX Moderna", "Push Notification", "Offline First"],
+      "Native and cross-platform applications delivering smooth and engaging user experiences on every device.",
+    features: ["React Native", "Modern UI/UX", "Push Notifications", "Offline First"],
     gradient: "from-pink-600 to-rose-600",
   },
   {
     icon: Database,
-    title: "Gestionali",
-    subtitle: "Software su Misura",
+    title: "Custom Software",
+    subtitle: "Tailored Solutions",
     description:
-      "Sistemi gestionali personalizzati per ottimizzare i processi aziendali: CRM, ERP, gestione risorse e automazione.",
-    features: ["Cloud Based", "API REST", "Report Avanzati", "Multi-utente"],
+      "Custom management systems to optimize your business processes: CRM, ERP, resource management, and automation.",
+    features: ["Cloud Based", "REST API", "Advanced Reports", "Multi-user"],
     gradient: "from-amber-600 to-orange-600",
   },
   {
-    icon: Palette,
-    title: "Brand Identity",
-    subtitle: "Design & Strategia",
+    icon: Zap,
+    title: "Automations",
+    subtitle: "Streamline & Scale",
     description:
-      "Crea un'identità visiva memorabile: logo, palette colori, typography e linee guida per una comunicazione coerente.",
-    features: ["Logo Design", "Brand Guidelines", "Social Kit", "Mockup"],
+      "Automate repetitive tasks and workflows to save time and reduce errors. From email sequences to full business process automation.",
+    features: ["Workflow Automation", "API Integrations", "Custom Triggers", "Real-time Sync"],
     gradient: "from-emerald-600 to-teal-600",
   },
   {
     icon: TrendingUp,
     title: "Digital Marketing",
-    subtitle: "Cresci Online",
+    subtitle: "Grow Online",
     description:
-      "Strategie di marketing digitale per aumentare visibilità, traffico e conversioni: SEO, SEM, Social Media e Content.",
+      "Digital marketing strategies to increase visibility, traffic, and conversions: SEO, SEM, Social Media, and Content.",
     features: ["SEO/SEM", "Social Media", "Content Strategy", "Analytics"],
     gradient: "from-indigo-600 to-violet-600",
   },
@@ -113,14 +113,14 @@ export default function Services() {
         {/* Header */}
         <div ref={titleRef} className="text-center mb-16 opacity-0">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-gray-300 mb-4">
-            I Nostri Servizi
+            Our Services
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold">
-            Soluzioni <span className="gradient-text">Complete</span>
+            Complete <span className="gradient-text">Solutions</span>
           </h2>
           <p className="mt-4 text-gray-400 max-w-2xl mx-auto text-lg">
-            Dalla concezione alla realizzazione, offriamo servizi end-to-end per
-            il tuo successo digitale
+            From concept to launch, we offer end-to-end services for your
+            digital success
           </p>
         </div>
 

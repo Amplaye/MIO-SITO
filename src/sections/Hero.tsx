@@ -4,10 +4,9 @@ import { Button } from "../components/ui/button";
 import gsap from "gsap";
 
 const stats = [
-  { value: "150+", label: "Progetti Realizzati" },
-  { value: "50+", label: "Clienti Soddisfatti" },
-  { value: "8+", label: "Anni di Esperienza" },
-  { value: "100%", label: "Passione" },
+  { value: "150+", label: "Projects Completed" },
+  { value: "150+", label: "Happy Clients" },
+  { value: "10+", label: "Years of Service" },
 ];
 
 export default function Hero() {
@@ -60,29 +59,29 @@ export default function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-gray-300 mb-8">
           <Sparkles size={16} className="text-violet-400" />
-          Trasformiamo idee in realtà digitale
+          Turning Ideas Into Digital Reality
         </div>
 
         {/* Title */}
         <div ref={titleRef} className="opacity-0">
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tight">
-            Costruiamo il
+            Building the
             <br />
-            <span className="gradient-text">Futuro Digitale</span>
+            <span className="gradient-text">Digital Future</span>
           </h1>
         </div>
 
         {/* Subtitle */}
         <p ref={subtitleRef} className="opacity-0 mt-6 text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto">
-          Siti web che catturano, app che conquistano, e-commerce che vendono.
-          <span className="text-gray-300"> La tua visione, la nostra expertise.</span>
+          Websites that captivate, apps that conquer, e-commerce that sells.
+          <span className="text-gray-300"> Your vision, our expertise.</span>
         </p>
 
         {/* CTA */}
         <div ref={ctaRef} className="opacity-0 mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button className="bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white px-8 py-6 rounded-xl text-lg btn-shine transition-all duration-300 hover:scale-105">
             <Rocket size={20} />
-            <a href="#contatti">Inizia il tuo progetto</a>
+            <a href="#contact">Start Your Project</a>
             <ArrowRight size={20} />
           </Button>
           <Button
@@ -90,12 +89,12 @@ export default function Hero() {
             className="text-gray-300 hover:text-white px-8 py-6 rounded-xl text-lg glass hover:bg-white/5"
           >
             <CodeXml size={20} />
-            <a href="#portfolio">Vedi i nostri lavori</a>
+            <a href="#portfolio">See Our Work</a>
           </Button>
         </div>
 
         {/* Stats */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
+        <div className="mt-20 grid grid-cols-3 gap-8 max-w-3xl mx-auto">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-3xl sm:text-4xl font-bold gradient-text">{stat.value}</div>
